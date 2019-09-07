@@ -2,17 +2,10 @@
   <div>
     <main id="mainContent" class="container-fluid">
       <div class="row">
-        <div class="col-2 p-0 border-right sidebar">
-          <div class="list-group list-group-flush border-bottom">
-            <MasterDetailSideBarTab
-              v-for="(textAssets, index) in masterDetailText"
-              :key="textAssets.id"
-              :index="index"
-              :tabText="textAssets.title"
-              @onDisplayTabClick="handleDisplayTabClick"
-            />
-          </div>
+        <div class="col-0 p-0 border-right sidebar mx-3 pr-3">
+          <ManuSideBar />
         </div>
+        
         <MasterDetailPage :textSampleData="masterDetailText[currentDisplayTabIndex]" />
       </div>
     </main>
@@ -30,13 +23,16 @@ import MasterDetailPage from "@/components/MasterDetailPage";
 import MasterDetailSideBarTab from "@/components/MasterDetailSideBarTab";
 import BaseWarningMessage from "@/components/BaseWarningMessage";
 
+import ManuSideBar from "@/components/ManuSideBar";
+
 export default {
-  name: "Master_Detail",
+  name: "Manu",
 
   components: {
     MasterDetailPage,
     MasterDetailSideBarTab,
-    BaseWarningMessage
+    BaseWarningMessage,
+    ManuSideBar
   },
 
   data() {

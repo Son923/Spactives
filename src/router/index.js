@@ -1,7 +1,7 @@
 ﻿import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Blank from "@/views/Blank.vue";
+import Manu from "@/views/Manu.vue";
 import Grid from "@/views/Grid.vue";
 import Blank2 from "@/views/Blank2.vue";
 import List from "@/views/List.vue";
@@ -16,7 +16,7 @@ export default new VueRouter({
     { path: "/List", component: List },
     { path: "/Blank2", component: Blank2 },
     { path: "/Grid", component: Grid },
-    { path: "/Blank", component: Blank },
+    { path: "/Blank", component: Manu },
 
     { path:"/", redirect: "/Blank" }
   ]

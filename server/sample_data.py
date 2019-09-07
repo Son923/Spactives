@@ -10,7 +10,7 @@ sample_data['text_assets'] = [
   {
     'shortDescription': short_lorem_ipsum,
     'longDescription': long_lorem_ipsum,
-    'title': 'Hùng',
+    'title': 'Blue Ribbon Inc.',
     'status': 'Closed',
     'shipTo': 'Francisco Pérez-Olaeta',
     'orderTotal': 2490.0,

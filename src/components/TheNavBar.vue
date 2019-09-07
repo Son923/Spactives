@@ -10,7 +10,7 @@
         <img src="@/assets/logo.png" alt="">
       </a>
       <div class="navbar-nav">
-        <b-nav-item class="nav-item nav-link active" to="/Blank">Blank</b-nav-item>
+        <b-nav-item class="nav-item nav-link active" to="/Blank">Manu</b-nav-item>
         <b-nav-item class="nav-item nav-link active" to="/Grid">Grid</b-nav-item>
         <b-nav-item class="nav-item nav-link active" to="/Blank2">Blank2</b-nav-item>
         <b-nav-item class="nav-item nav-link active" to="/List">List</b-nav-item>
