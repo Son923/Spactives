@@ -9,7 +9,7 @@
           class="list-group-item list-group-item-action styles.sidebarText"
           type="button"
         >
-          <img class="" src="@/assets/explore.png" alt="Explore" />
+          <img class="" src="@/assets/svg/Explore.svg" alt="Explore" />
         </button>
         <button
           id="Newsfeed"

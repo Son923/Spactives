@@ -18,13 +18,13 @@
       </div>
       <div>
         <a class="navbar-brand" href="/">
-          <img src="@/assets/mail.png" alt="">
+          <img src="@/assets/svg/Mail.svg" alt="">
         </a>
         <a class="navbar-brand" href="/">
           <img class="avatar" src="@/assets/image.png" alt="">
         </a>
         <a class="navbar-brand" href="/">
-          <p>Duong <i><img src="@/assets/arrow_down.png" alt=""></i></p>
+          <p>Duong <i><img src="@/assets/svg/ArrowDown.svg" alt=""></i></p>
         </a>
       </div>
     </b-nav>
