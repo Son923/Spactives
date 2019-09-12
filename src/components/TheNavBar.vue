@@ -5,7 +5,7 @@
     <div class="skipLink">
       <a href="#mainContent">Skip to Main Content</a>
     </div>
-    <b-nav class="navbar navbar-expand-sm navbar-light border-bottom justify-content-between">
+    <b-nav class="navbar navbar-expand-sm navbar-light justify-content-between">
       <a class="navbar-brand" href="/">
         <img src="@/assets/logo.png" alt="">
       </a>

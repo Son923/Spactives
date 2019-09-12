@@ -1,12 +1,13 @@
 ﻿<template>
   <div>
-    <main id="mainContent" class="container-fluid">
+    <main id="manuView" class="container-fluid border-top">
       <div class="row">
-        <div class="col-0 p-0 border-right sidebar mx-3 pr-3">
+        <div class="col-0 border-right sidebar">
           <ManuSideBar />
         </div>
-        
-        <MasterDetailPage :textSampleData="masterDetailText[currentDisplayTabIndex]" />
+        <div class="col pl-4 pt-4">
+          <ManuBackground :textSampleData="masterDetailText[currentDisplayTabIndex]" />
+        </div>        
       </div>
     </main>
     <BaseWarningMessage
@@ -19,20 +20,17 @@
 
 <script>
 import CONSTANTS from "@/constants";
-import MasterDetailPage from "@/components/MasterDetailPage";
-import MasterDetailSideBarTab from "@/components/MasterDetailSideBarTab";
 import BaseWarningMessage from "@/components/BaseWarningMessage";
-
 import ManuSideBar from "@/components/ManuSideBar";
+import ManuBackground from "@/components/ManuBackground";
 
 export default {
   name: "Manu",
 
   components: {
-    MasterDetailPage,
-    MasterDetailSideBarTab,
     BaseWarningMessage,
-    ManuSideBar
+    ManuSideBar,
+    ManuBackground
   },
 
   data() {
@@ -87,8 +85,15 @@ export default {
 </script>
 
 <style scoped>
+#manuView {
+  /* margin-top: 15px; */
+  background-color: whitesmoke;
+  /* border-top: solid 1px; */
+}
 .sidebar {
   /* full height - footer height - navbar height */
   min-height: calc(100vh - 160px - 57px);
+  background-color: white;
+
 }
 </style>
