@@ -1,16 +1,17 @@
 <template>
 <!-- <main id="mainContent"> -->
     <div id="mainContent" class="col">
-        <div class="row heading">
-            <div class="col-2">
+        <div class="row heading"></div>
+        <div class="row heading-title">
+            <div>
                 <img id="profile-picture" src="@/assets/profile.png" alt="">
             </div>
-            <div class="manu-title col-5">
-                <h1 class="mb-4">{{textSampleData.title}}<img src="@/assets/svg/Checker.svg" alt="" style="margin-left: 15px;"></h1>
+            <div class="manu-title">
+                <h1 class="mb-4 company-name">{{textSampleData.title}}<img src="@/assets/svg/Checker.svg" alt="" style="margin-left: 15px;"></h1>
                 <p style="font-weight: 600;">CMT Garment Manufacturer</p>
                 <p><img src="@/assets/svg/Marker.svg" alt="" style="margin-right: 20px;"> Can tho province, Viet Nam</p>
             </div>
-            <div class="contact-group col-5 text-center">
+            <div class="contact-group">
                 <b-button class="contact-buttons" variant="outline-light">
                     <p style="color: #7291F7"><img src="@/assets/svg/Message.svg" alt="" style="margin-right: 10px;">Message</p>
                 </b-button>
@@ -107,23 +108,39 @@ export default {
 }
 .heading {
     /* background-color: wheat; */
-  padding-top: 18em;
+  /* padding-top: 18em; */
   background-image: url("../assets/cover.png");
-  background-size: contain;
+  height: 27vh;
+  background-position: center;
   background-repeat: no-repeat;
-  padding-left: 80px;
+  background-size: cover;
+  position: relative;
+  min-height: 251px;
+}
+.heading-title {
+    margin-top: 66px;
+    display: grid;
+    grid-template-columns: 300px 2fr 2fr;
+}
+.company-name {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 #profile-picture {
+    left: 80px;
     position: absolute;
     border: solid 1px white;
-    top: -140px;
+    top: 170px;
 }
 .manu-title {
     top: -30px;
-    padding-left: 40px;
 }
 .contact-group {
     top: -20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contact-buttons {
     height: 40px;
@@ -150,5 +167,22 @@ export default {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
+}
+@media only screen and (max-width: 1136px) {
+   #profile-picture {
+    left: unset;
+    right: 50%;
+    top: 270px;
+    transform: translate(50%,-50%);
+  }
+  .heading-title {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .company-name {
+    display: block;
+  }
 }
 </style>
