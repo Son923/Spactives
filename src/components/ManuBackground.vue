@@ -9,7 +9,7 @@
             <div class="manu-title">
                 <h1 class="mb-4 company-name">{{textSampleData.title}}<img src="@/assets/svg/Checker.svg" alt="" style="margin-left: 15px;"></h1>
                 <p style="font-weight: 600;">CMT Garment Manufacturer</p>
-                <p><img src="@/assets/svg/Marker.svg" alt="" style="margin-right: 20px;"> Can tho province, Viet Nam</p>
+                <p><img src="@/assets/svg/Marker.svg" alt="" style="margin-right: 13px;"> Can tho province, Viet Nam</p>
             </div>
             <div class="contact-group">
                 <b-button class="contact-buttons" variant="outline-light">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="row info">
-            <b-col cols="6" class="grid">
+            <b-col class="grid">
                 <div class="service">
                     <p class="title">Service Provide</p>
                     <div id="info-labels">
@@ -49,7 +49,7 @@
                 </div>
             </b-col>
 
-            <b-col cols="5" class="grid about">
+            <b-col class="grid about">
                 <p class="title">About {{textSampleData.title}}</p>
                 <p>Backing startup churn rate ecosystem pivot lean startup vesting period. Social media startup paradigm shift ecosystem interaction design rockstar branding stealth assets channels influencer analytics. Stock paradigm shift niche market hypotheses bandwidth scrum project buzz strategy return on investment facebook holy grail. User experience A/B testing interaction design rockstar beta.</p>
             </b-col>
@@ -101,6 +101,7 @@ export default {
   margin-bottom: 0;
   font-size: 20px;
   padding-bottom: 20px;
+  color: #444444;
 }
 
 .breadCrumbLink {
@@ -118,7 +119,7 @@ export default {
   min-height: 251px;
 }
 .heading-title {
-    margin-top: 66px;
+    margin-top: 27px;
     display: grid;
     grid-template-columns: 300px 2fr 2fr;
 }
@@ -147,6 +148,11 @@ export default {
 }
 .info {
     padding-left: 80px;
+    padding-right: 144px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .service {
     margin-bottom: 50px;
@@ -183,6 +189,16 @@ export default {
   }
   .company-name {
     display: block;
+  }
+  .info {
+    margin-top: -45px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .info > .grid:first-child {
+    flex: 0 0 100%;
   }
 }
 </style>
